@@ -1,9 +1,13 @@
 {
   "name": "portfolio-project",
-  "version": "0.0.0",
+  "version": "0.0.1",
   "private": true,
   "scripts": {
     "start": "node ./server.js"
+  },
+  "engines": {
+    "node": "^14.0.0",
+    "npm": "^6.0.0"
   },
   "dependencies": {
     "@fortawesome/fontawesome-free": "^5.15.3",
@@ -18,7 +22,6 @@
     "popper.js": "^1.16.1"
   },
   "description": "This is my potfolio website built using ExpressJS",
-  "main": "app.js",
   "devDependencies": {
     "nodemon": "^2.0.7"
   },
@@ -31,5 +34,9 @@
   "bugs": {
     "url": "https://github.com/supremvanam/portfolio-website/issues"
   },
-  "homepage": "https://github.com/supremvanam/portfolio-website#readme"
+  "homepage": "https://github.com/supremvanam/portfolio-website#readme",
+  "main": "index.js",
+  "keywords": [
+    "portfolio"
+  ]
 }
