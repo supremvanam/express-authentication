@@ -1,21 +1,39 @@
 <!-- Main Navigation -->
-<div class="container-fluid">
-    <nav class="navbar navbar-expand-lg navbar-light bg-light">
 
-        <a class="navbar-brand" href="/">
-            <img src="assets/images/supremvanam-logo.png" alt="Suprem Vanam Logo" width="10%" height="10%"
-                class="d-inline-block align-top" />
-            <!-- <span class="hidden">Suprem Vanam</span> -->
-        </a>
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
-            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="navbar-nav ml-auto">
+<!-- Navbar -->
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+  <!-- Container wrapper -->
+  <div class="container">
+    <!-- Navbar brand -->
+    <a class="navbar-brand me-2" href="https://supremvanam.herokuapp.com/">
+      <img
+        src="/assets/images/supremvanam-logo.png"
+        height="50"
+        alt=""
+        loading="lazy"
+        style="margin-top: -1px;"
+      />
+    </a>
 
+    <!-- Toggle button -->
+    <button
+      class="navbar-toggler"
+      type="button"
+      data-mdb-toggle="collapse"
+      data-mdb-target="#navbarButtonsExample"
+      aria-controls="navbarButtonsExample"
+      aria-expanded="false"
+      aria-label="Toggle navigation"
+    >
+      <i class="fas fa-bars"></i>
+    </button>
 
-                <li class="nav-item active">
+    <!-- Collapsible wrapper -->
+    <div class="collapse navbar-collapse">
+      <!-- Left links -->
+      <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+
+                <li class="nav-item" style="font-family: 'Ubuntu Mono', monospace; font-size: 20px;">
                     <% if (title=="Home" ) { %>
                         <a class="nav-link active" aria-current="page" href="/home">Home</a>
                         <% } else { %>
@@ -24,7 +42,7 @@
                 </li>
 
 
-                <li class="nav-item active">
+                <li class="nav-item" style="font-family: 'Ubuntu Mono', monospace; font-size: 20px;">
                     <% if (title=="About" ) { %>
                         <a class="nav-link active" aria-current="page" href="/about">About</a>
                         <% } else { %>
@@ -33,7 +51,7 @@
                 </li>
 
 
-                <li class="nav-item active">
+                <li class="nav-item" style="font-family: 'Ubuntu Mono', monospace; font-size: 20px;">
                     <% if (title=="Projects" ) { %>
                         <a class="nav-link active" aria-current="page" href="/projects">Projects</a>
                         <% } else { %>
@@ -42,7 +60,7 @@
                 </li>
 
 
-                <li class="nav-item active">
+                <li class="nav-item" style="font-family: 'Ubuntu Mono', monospace; font-size: 20px;">
                     <% if (title=="Services" ) { %>
                         <a class="nav-link active" aria-current="page" href="/services">Services</a>
                         <% } else { %>
@@ -51,19 +69,25 @@
                 </li>
 
 
-                <li class="nav-item active">
+                <li class="nav-item" style="font-family: 'Ubuntu Mono', monospace; font-size: 20px;">
                     <% if (title=="Contact" ) { %>
                         <a class="nav-link active" aria-current="page" href="/contact">Contact</a>
                         <% } else { %>
                             <a class="nav-link" aria-current="page" href="/contact">Contact</a>
                             <% } %>
                 </li>
+      </ul>
+      <!-- Left links -->
 
-            </ul>
-            <!-- <form class="d-flex">
-          <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-          <button class="btn btn-outline-success" type="submit">Search</button>
-        </form> -->
-        </div>
-    </nav>
-</div>
+      <div class="d-flex align-items-center">
+      <li class="nav-item hidden">Github</li>
+        <a
+          class="btn btn-dark px-4"
+          href="https://github.com/supremvanam"
+          target="_blank"
+          role="button"
+          ><i class="fab fa-github"></i></a>
+      </div>
+    </div>
+  </div>
+</nav>

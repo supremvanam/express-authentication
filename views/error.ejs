@@ -2,10 +2,21 @@
     <%- include partials/main_nav.ejs %>
 
         <div class="container">
-            <h2>
+            <h1 class="text-center" style="font-family: 'Ubuntu Mono', monospace; font-size: 20vw;">
                 <%= error.status %>
+
+            </h1>
+            <h2 class="text-center" style="font-family: 'Ubuntu Mono', monospace; font-size: 10vw;">
+                <%= message %>
             </h2>
         </div>
 
-        <%- include partials/bottom_nav.ejs %>
-            <%- include partials/footer.ejs %>
+        <div class="mt-4 text-center">
+            <a href="/home">
+                <button type="button" class="btn text-dark btn-lg bg-white"><span id="ubuntu-font"><u>Take me back to
+                            the home page</u></span>
+                </button>
+            </a>
+        </div>
+
+        <%- include partials/footer.ejs %>

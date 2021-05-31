@@ -1,4 +1,13 @@
 /* Custom CSS */
 .hidden {
-  display: none;
+  color: #f8f9fa;
+}
+
+#ubuntu-font {
+  font-family: "Ubuntu Mono", monospace;
+  font-size: 20px;
+}
+
+.large-font {
+  font-size: 12vw;
 }
