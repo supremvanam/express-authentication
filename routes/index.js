@@ -4,34 +4,32 @@ var router = express.Router();
 
 /* GET home page. */
 router.get('/', function(req, res, next) {
-  res.render('index', {title: 'Suprem Vanam'});
+  res.render('index', {title: 'Home'});
 });
 
 /* GET home page. */
 router.get('/home', function(req, res, next) {
-  res.render('index', {title: 'Home | Suprem Vanam'});
+  res.render('index', {title: 'Home'});
 });
 
 /* GET about page. */
 router.get('/about', function(req, res, next) {
-  res.render('index', {title: 'About | Suprem Vanam'});
+  res.render('index', {title: 'About'});
 });
 
 /* GET projects page. */
 router.get('/projects', function(req, res, next) {
-  res.render('index', {title: 'Projects | Suprem Vanam'});
+  res.render('index', {title: 'Projects'});
 });
 
 /* GET services page. */
 router.get('/services', function(req, res, next) {
-  res.render('index', {title: 'Services | Suprem Vanam'});
+  res.render('index', {title: 'Services'});
 });
 
 /* GET contact page. */
 router.get('/contact', function(req, res, next) {
-  res.render('index', {title: 'Contact | Suprem Vanam'});
+  res.render('index', {title: 'Contact'});
 });
-
-app.listen(process.env.PORT || this.prototype, () => console.log(`Our web app is listening at http://localhost:${port}`));
 
 module.exports = router;

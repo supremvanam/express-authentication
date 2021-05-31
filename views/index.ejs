@@ -1,62 +1,7 @@
-<!DOCTYPE html>
-<html lang="en">
+<%- include partials/header.ejs %>
+<%- include partials/main_nav.ejs %>
 
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>
-    <%= title %>
-  </title>
-  <!-- CSS Section -->
-  <link rel='stylesheet' href="/bootstrap/dist/css/bootstrap.min.css" />
-  <link rel='stylesheet' href="/@fortawesome/fontawesome-free/css/all.min.css" />
-  <link rel='stylesheet' href='/content/app.css' />
-</head>
-
-<body>
-
-  <!-- Main Navigation -->
-  <nav class="navbar navbar-expand-lg navbar-light bg-light">
-    <div class="container-fluid">
-      <a class="navbar-brand" href="/"></a>
-      <img src="/assets/images/supremvanam-logo-black.png" width="10%" height="10%" alt="Logo">
-      </a>
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
-        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse" id="navbarSupportedContent">
-        <ul class="navbar-nav ml-auto">
-          <li class="nav-item ">
-            <a class="nav-link active" aria-current="page" href="/home">Home</a>
-          </li>
-
-          <li class="nav-item">
-            <a class="nav-link " aria-current="page" href="/about">About</a>
-          </li>
-
-          <li class="nav-item">
-            <a class="nav-link " aria-current="page" href="/projects">Projects</a>
-          </li>
-
-          <li class="nav-item">
-            <a class="nav-link " aria-current="page" href="/services">Services</a>
-          </li>
-
-          <li class="nav-item">
-            <a class="nav-link " aria-current="page" href="/contact">Contact</a>
-          </li>
-
-        </ul>
-        <!-- <form class="d-flex">
-          <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-          <button class="btn btn-outline-success" type="submit">Search</button>
-        </form> -->
-      </div>
-    </div>
-  </nav>
-
+ 
   <!-- Main Content -->
   <main class="container">
     <div class="jumbotron">
@@ -67,11 +12,6 @@
   </main>
 
 
-  <!-- JS Section -->
-  <script src="/jquery/dist/jquery.min.js"></script>
-  <link rel='stylesheet' href="/bootstrap/dist/css/bootstrap.min.js" />
-  <script src="/scripts/app.js"></script>
+<%- include partials/bottom_nav.ejs %>
+<%- include partials/footer.ejs %>
 
-</body>
-
-</html>

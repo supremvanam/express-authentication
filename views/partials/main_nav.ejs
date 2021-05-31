@@ -1,0 +1,69 @@
+<!-- Main Navigation -->
+<div class="container-fluid">
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+
+        <a class="navbar-brand" href="/">
+            <img src="assets/images/supremvanam-logo.png" alt="Suprem Vanam Logo" width="10%" height="10%"
+                class="d-inline-block align-top" />
+            <!-- <span class="hidden">Suprem Vanam</span> -->
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav ml-auto">
+
+
+                <li class="nav-item active">
+                    <% if (title=="Home" ) { %>
+                        <a class="nav-link active" aria-current="page" href="/home">Home</a>
+                        <% } else { %>
+                            <a class="nav-link" aria-current="page" href="/home">Home</a>
+                            <% } %>
+                </li>
+
+
+                <li class="nav-item active">
+                    <% if (title=="About" ) { %>
+                        <a class="nav-link active" aria-current="page" href="/about">About</a>
+                        <% } else { %>
+                            <a class="nav-link" aria-current="page" href="/about">About</a>
+                            <% } %>
+                </li>
+
+
+                <li class="nav-item active">
+                    <% if (title=="Projects" ) { %>
+                        <a class="nav-link active" aria-current="page" href="/projects">Projects</a>
+                        <% } else { %>
+                            <a class="nav-link" aria-current="page" href="/projects">Projects</a>
+                            <% } %>
+                </li>
+
+
+                <li class="nav-item active">
+                    <% if (title=="Services" ) { %>
+                        <a class="nav-link active" aria-current="page" href="/services">Services</a>
+                        <% } else { %>
+                            <a class="nav-link" aria-current="page" href="/services">Services</a>
+                            <% } %>
+                </li>
+
+
+                <li class="nav-item active">
+                    <% if (title=="Contact" ) { %>
+                        <a class="nav-link active" aria-current="page" href="/contact">Contact</a>
+                        <% } else { %>
+                            <a class="nav-link" aria-current="page" href="/contact">Contact</a>
+                            <% } %>
+                </li>
+
+            </ul>
+            <!-- <form class="d-flex">
+          <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+          <button class="btn btn-outline-success" type="submit">Search</button>
+        </form> -->
+        </div>
+    </nav>
+</div>
