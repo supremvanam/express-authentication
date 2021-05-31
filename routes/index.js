@@ -1,4 +1,5 @@
 var express = require('express');
+const app = require('../app');
 var router = express.Router();
 
 /* GET home page. */
@@ -30,5 +31,7 @@ router.get('/services', function(req, res, next) {
 router.get('/contact', function(req, res, next) {
   res.render('index', {title: 'Contact | Suprem Vanam'});
 });
+
+app.listen(process.env.PORT || this.prototype, () => console.log(`Our web app is listening at http://localhost:${port}`));
 
 module.exports = router;
