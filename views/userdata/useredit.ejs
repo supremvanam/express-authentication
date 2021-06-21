@@ -1,0 +1,45 @@
+		<%- include('../partials/header.ejs')%>
+        <%- include('../partials/main_nav.ejs')%>
+
+		<div class="container-fluid p-0">
+			<div class="home-background">
+				<div class="page-title text-center">
+                        &nbsp;
+					<h2 class = "text-white"><%= title %></h2>
+				</div>
+			</div>
+		</div>
+
+        <div class="container mt-5 mb-5">
+            <div class="row">
+                <div class="col-lg-6 mx-auto card shadow"   style="padding:0">
+                    <form method="post" action="/list/edit/<%= user._id %>" class="p-5">
+                        <div class="mb-3">
+                            <label class="form-label">Name</label>
+                            <input type="text" class="form-control" name="contactname" value="<%= user.contactname %>" >
+                        </div>
+                        <div class="mb-3">
+                            <label class="form-label">Email</label>
+                            <input type="email" class="form-control" name="email" value="<%= user.email %>">
+                        </div>
+                        <div class="mb-3">
+                            <label class="form-label">Phone</label>
+                            <input type="text" class="form-control" name="phone" value="<%= user.phone %>">
+                        </div>
+                        <div class="mb-3">
+                            <label class="form-label">Country</label>
+                            <input type="text" class="form-control" name="city" value="<%= user.country %>">
+                        </div>
+                        <div class="text-center">
+                            <input type="submit" class="btn btn-dark btn-block" value="Update Data">
+                            <a href="/list/delete/<%= user._id %>" class="btn btn-danger btn-block">Delete</a>
+                            <a href="/list" class="btn btn-dark btn-block">Cancel</a>
+                        </div>
+                    </form>
+                    
+                    
+                </div>
+            </div>
+        </div>
+
+		<%- include('../partials/footer.ejs')%>

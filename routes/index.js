@@ -1,40 +1,38 @@
 // File: routes/index.js
 // Name: Suprem Vanam
 // Student ID: 301177430
-// Date: 31-MAY-2021
+// Date: 20-JUNE-2021
 
 var express = require('express');
-const app = require('../app');
 var router = express.Router();
 
-/* GET home page. */
-router.get('/', function(req, res, next) {
-  res.render('index', {title: 'Home'});
-});
+
+var indexController = require('../controllers/index');
+
+router.get('/', indexController.displayHome);
 
 /* GET home page. */
-router.get('/home', function(req, res, next) {
-  res.render('index', {title: 'Home'});
-});
+router.get('/home', indexController.displayHome);
 
-/* GET about page. */
-router.get('/about', function(req, res, next) {
-  res.render('index', {title: 'About'});
-});
+/* GET About page. */
+router.get('/about', indexController.displayAbout);
 
-/* GET projects page. */
-router.get('/projects', function(req, res, next) {
-  res.render('index', {title: 'Projects'});
-});
+/* GET Contact page. */
+router.get('/contact', indexController.displayContact);
 
-/* GET services page. */
-router.get('/services', function(req, res, next) {
-  res.render('index', {title: 'Services'});
-});
+/* GET Services page. */
+router.get('/services', indexController.displayServices);
 
-/* GET contact page. */
-router.get('/contact', function(req, res, next) {
-  res.render('contact', {title: 'Contact'});
-});
+/* GET Projects page. */
+router.get('/projects', indexController.displayProject);
+
+/* GET Login page. */
+router.get('/login', indexController.displayLogin);
+
+/* POST Login page. */
+router.post('/login', indexController.processLogin);
+
+/* GET Logout page. */
+router.get('/logout', indexController.processLogout);
 
 module.exports = router;

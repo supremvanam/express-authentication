@@ -1,0 +1,42 @@
+		<%- include('../partials/header.ejs')%>
+    <%- include('../partials/main_nav.ejs')%>
+
+		<div class="container-fluid p-0 text-white">
+			<div class="home-background">
+				<div class="page-title text-center">
+        &nbsp;
+					<center><h2><%= title %></h2></center>
+				</div>
+			</div>
+		</div>
+
+        <div class="container text-white py-5"> 
+            <table class="table">
+                <thead>
+                  <tr class = "text-white">
+                    <th scope="col">Contact Name</th>
+                    <th scope="col">Contact Number</th>
+                    <th scope="col">Email Address</th>
+                    <th scope="col">Edit</th>
+                    <th scope="col">Delete</th>
+                  </tr>
+                </thead>
+                <tbody class = "text-white">
+                    <% for(i=0; i<user.length; i++){ %>
+                        <tr>
+                            <td><%= user[i].contactname %></td>
+                            <td><%= user[i].phone %></td>
+                            <td><%= user[i].email %></td>
+                            <td><a href="/list/edit/<%= user[i]._id %>" class="btn btn-light">Edit</a></td>
+                            <td><a href="/list/delete/<%= user[i]._id %>" class="btn btn-danger">Delete</a></td>
+                          </tr>
+
+                    <% }  %>
+                </tbody>
+            </table>
+            &nbsp;
+            <center><a href="/logout" class="btn btn-light">Logout</a></center>
+
+        </div>
+
+		<%- include('../partials/footer.ejs')%>

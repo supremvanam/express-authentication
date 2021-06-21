@@ -9,7 +9,7 @@
 // Student ID: 301177430
 // Date: 31-MAY-2021
 
-var app = require('./app');
+var app = require('./config/app');
 var debug = require('debug')('portfolio-project:server');
 var http = require('http');
 
