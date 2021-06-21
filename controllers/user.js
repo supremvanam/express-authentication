@@ -2,10 +2,8 @@ const express = require('express');
 const router = express.Router();
 const mongoose = require('mongoose');
 
-// Connect to our User model.
 const User = require('../models/users');
 
-//fetch data.
 module.exports.displayList = (req, res, next) =>{
     User.find((err,data) =>{
         if(!err){
@@ -21,7 +19,7 @@ module.exports.displayList = (req, res, next) =>{
     }).sort({contactname:1});
 };
 
-//fetch Updated Data
+// Fetch Data
 module.exports.updateGetList = (req, res, next) =>{
     let id = req.params.id;
 
@@ -38,7 +36,7 @@ module.exports.updateGetList = (req, res, next) =>{
 
 };
 
-// update form data
+// Update
 module.exports.updateList = (req, res, next) =>{
     
     let id = req.params.id;

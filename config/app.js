@@ -20,7 +20,7 @@ const flash = require('connect-flash');
 const mongoose = require('mongoose');
 const DB = require('./db');
 
-// point mongoose to the DB URI
+// Point mongoose to the DB URI
 mongoose.connect(DB.URI, { useNewUrlParser: true,  useUnifiedTopology: true });
 
 // An event to see when we're connected/not connected to the database

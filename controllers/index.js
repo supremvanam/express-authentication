@@ -8,7 +8,6 @@ const localStrategy = passportLocal.Strategy;
 
 const User = require('../models/users');
 
-
 module.exports.displayHome = (req, res, next) => {
     res.render('partials/home.ejs',{title: 'Home'} );
 };
@@ -32,8 +31,6 @@ module.exports.displayContact = (req, res, next) => {
 module.exports.displayLogin = (req, res, next) => {
     res.render('auth/login',{title: 'Login'});
 };
-
-
 
 // Login
 module.exports.processLogin  = (req, res,next) => {
