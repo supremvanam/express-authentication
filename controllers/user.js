@@ -18,7 +18,7 @@ module.exports.displayList = (req, res, next) =>{
         {
             console.error.bind("Error in Retrieving Data " + err);
         }
-    }).sort({contactname:1});;
+    });
 };
 
 //fetch Updated Data
