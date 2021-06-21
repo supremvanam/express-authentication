@@ -17,7 +17,7 @@
                     <th scope="col">Contact Name</th>
                     <th scope="col">Contact Number</th>
                     <th scope="col">Email Address</th>
-                    <th scope="col">Edit</th>
+                    <th scope="col">Update</th>
                     <th scope="col">Delete</th>
                   </tr>
                 </thead>
@@ -27,7 +27,7 @@
                             <td><%= user[i].contactname %></td>
                             <td><%= user[i].phone %></td>
                             <td><%= user[i].email %></td>
-                            <td><a href="/list/edit/<%= user[i]._id %>" class="btn btn-light">Edit</a></td>
+                            <td><a href="/list/edit/<%= user[i]._id %>" class="btn btn-light">Update</a></td>
                             <td><a href="/list/delete/<%= user[i]._id %>" class="btn btn-danger">Delete</a></td>
                           </tr>
 
